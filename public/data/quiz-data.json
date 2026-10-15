@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T11:10:31.358Z",
+  "generatedAt": "2026-10-15T14:20:14.826Z",
   "years": [
     {
       "year": "2024",
@@ -10112,6 +10112,273 @@
               "solution": "Please go through lecture notes of week-11 (slide no.30) for better understanding.",
               "year": "2026",
               "week": 11
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "questions": [
+            {
+              "id": "2026-W12-Q1",
+              "prompt": "Sustainability in economic sustainability is ___.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "multidimensional"
+                },
+                {
+                  "key": "b",
+                  "text": "bidimensional"
+                },
+                {
+                  "key": "c",
+                  "text": "unidimensional"
+                },
+                {
+                  "key": "d",
+                  "text": "none of the given"
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "unidimensional",
+              "solution": "Please go through lecture notes of week-12 (slide no.02) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q2",
+              "prompt": "The term \"sustainable development\" was first mentioned in a book related to the 1972 UN Stockholm conference on ___.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "water"
+                },
+                {
+                  "key": "b",
+                  "text": "poverty"
+                },
+                {
+                  "key": "c",
+                  "text": "economic crisis"
+                },
+                {
+                  "key": "d",
+                  "text": "human environment"
+                }
+              ],
+              "correctAnswer": "d",
+              "correctText": "human environment",
+              "solution": "Please go through lecture notes of week-12 (slide no.03) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q3",
+              "prompt": "Environmental sustainability focuses on impacts of processes, products and services on ___.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "water"
+                },
+                {
+                  "key": "b",
+                  "text": "biodiversity"
+                },
+                {
+                  "key": "c",
+                  "text": "human health"
+                },
+                {
+                  "key": "d",
+                  "text": "all of the given"
+                }
+              ],
+              "correctAnswer": "d",
+              "correctText": "all of the given",
+              "solution": "Please go through lecture notes of week-12 (slide no.05) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q4",
+              "prompt": "Which of the following does not come under social sustainability?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Labour practices"
+                },
+                {
+                  "key": "b",
+                  "text": "Revenue generation"
+                },
+                {
+                  "key": "c",
+                  "text": "Human rights"
+                },
+                {
+                  "key": "d",
+                  "text": "Business ethics"
+                }
+              ],
+              "correctAnswer": "b",
+              "correctText": "Revenue generation",
+              "solution": "Please go through lecture notes of week-12 (slide no.06-07) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q5",
+              "prompt": "SDG __ focuses on clean water and sanitation.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "1"
+                },
+                {
+                  "key": "b",
+                  "text": "17"
+                },
+                {
+                  "key": "c",
+                  "text": "6"
+                },
+                {
+                  "key": "d",
+                  "text": "3"
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "6",
+              "solution": "Please go through lecture notes of week-12 (slide no.09) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q6",
+              "prompt": "SDG 16 focuses on ___.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "No poverty"
+                },
+                {
+                  "key": "b",
+                  "text": "No hunger"
+                },
+                {
+                  "key": "c",
+                  "text": "Good health"
+                },
+                {
+                  "key": "d",
+                  "text": "Peace and justice"
+                }
+              ],
+              "correctAnswer": "d",
+              "correctText": "Peace and justice",
+              "solution": "Please go through lecture notes of week-12 (slide no.09) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q7",
+              "prompt": "On 20 October 2020, the Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the ___ 2020.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "National Sustainability Meeting"
+                },
+                {
+                  "key": "b",
+                  "text": "National Teachers Meeting"
+                },
+                {
+                  "key": "c",
+                  "text": "Global Childrens’ Meeting"
+                },
+                {
+                  "key": "d",
+                  "text": "Global Education Meeting"
+                }
+              ],
+              "correctAnswer": "d",
+              "correctText": "Global Education Meeting",
+              "solution": "Please go through lecture notes of week-12 (slide no.14) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q8",
+              "prompt": "Education is related to all SDGs.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "True"
+                },
+                {
+                  "key": "b",
+                  "text": "False"
+                }
+              ],
+              "correctAnswer": "a",
+              "correctText": "True",
+              "solution": "Please go through lecture notes of week-12 (slide no.24) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q9",
+              "prompt": "Successful implementation of ESD requires a shift in focus from ___.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "teaching to learning"
+                },
+                {
+                  "key": "b",
+                  "text": "learning to teaching"
+                },
+                {
+                  "key": "c",
+                  "text": "reading to speaking"
+                },
+                {
+                  "key": "d",
+                  "text": "knowing to ignoring"
+                }
+              ],
+              "correctAnswer": "a",
+              "correctText": "teaching to learning",
+              "solution": "Please go through lecture notes of week-12 (slide no.29) for better understanding.",
+              "year": "2026",
+              "week": 12
+            },
+            {
+              "id": "2026-W12-Q10",
+              "prompt": "___ competency is the ability to reflect on one’s own role in the local community and (global) society.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "collaboration"
+                },
+                {
+                  "key": "b",
+                  "text": "self-awareness"
+                },
+                {
+                  "key": "c",
+                  "text": "strategic"
+                },
+                {
+                  "key": "d",
+                  "text": "normative"
+                }
+              ],
+              "correctAnswer": "b",
+              "correctText": "self-awareness",
+              "solution": "Please go through lecture notes of week-12 (slide no.62) for better understanding.",
+              "year": "2026",
+              "week": 12
             }
           ]
         }
