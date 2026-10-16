@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
+import { Home } from 'lucide-react'
 import { ControlPanel } from './components/ControlPanel'
 import { QuizCard } from './components/QuizCard'
 import { ResultsDashboard } from './components/ResultsDashboard'
 import { useQuiz } from './context/QuizContext'
 
 function App() {
-  const { loading, error, session } = useQuiz()
+  const { loading, error, session, resetQuiz } = useQuiz()
 
   if (loading) {
     return (
@@ -46,6 +47,11 @@ function App() {
           Year-wise, week-wise, and full syllabus drills with instant review and
           detailed solution tracking.
         </p>
+        {session.started && (
+          <button className="action-btn" onClick={resetQuiz}>
+            <Home size={16} /> Go Home
+          </button>
+        )}
       </motion.section>
 
       <section className="workspace-grid">
