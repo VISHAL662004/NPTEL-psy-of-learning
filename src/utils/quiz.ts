@@ -12,6 +12,21 @@ export function flattenQuestions(dataset: QuizDataset): Question[] {
   )
 }
 
+// Surnames of the psychologists, educators and researchers named anywhere in the question bank.
+const SCIENTIST_NAMES = [
+  'Watson', 'Freud', 'Skinner', 'Thorndike', 'Pavlov', 'Wundt', 'Bandura', 'Piaget', 'Vygotsky',
+  'Bruner', 'Dewey', 'Bloom', 'Gagne', 'Kolb', 'Maslow', 'Rogers', 'Gardner', 'Sternberg',
+  'Goleman', 'Salovey', 'Mayer', 'Bar-On', 'Tolman', 'Hull', 'Murray', 'Atkinson', 'Zajonc',
+  'Yerkes', 'Dodson', 'Vroom', 'Baddeley', 'Shiffrin', 'Craik', 'Lockhart', 'Hochschild',
+  'Simon', 'Hall', 'Ebbinghaus', 'Erikson', 'Kohlberg', 'Darwin', 'Köhler', 'Koffka', 'Wertheimer',
+]
+const SCIENTIST_REGEX = new RegExp(`\\b(?:${SCIENTIST_NAMES.join('|')})\\b`)
+
+export function isScientistQuestion(question: Question): boolean {
+  const text = `${question.prompt} ${question.options.map((option) => option.text).join(' ')}`
+  return SCIENTIST_REGEX.test(text)
+}
+
 function shuffleArray<T>(arr: T[]): T[] {
   const copy = [...arr]
   for (let i = copy.length - 1; i > 0; i--) {
@@ -52,7 +67,9 @@ export function getPool(
     }
   } else {
     // Handle different shuffle modes
-    if (selection.shuffle === 'random15') {
+    if (selection.shuffle === 'scientists') {
+      pool = flattenQuestions(dataset).filter(isScientistQuestion)
+    } else if (selection.shuffle === 'random15') {
       // Get 15 random questions from entire dataset
       const allQuestions = flattenQuestions(dataset)
       pool = getRandomSubset(allQuestions, 15)

@@ -37,7 +37,7 @@ interface QuizContextValue {
   startQuiz: (
     mode: QuizMode,
     source?: 'default' | 'custom',
-    customVariant?: 'weeks' | 'random15',
+    customVariant?: 'weeks' | 'random15' | 'scientists',
   ) => void
   answerQuestion: (questionId: string, option: string) => void
   setIndex: (index: number) => void
@@ -169,7 +169,7 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
     (
       mode: QuizMode,
       source: 'default' | 'custom' = 'default',
-      customVariant: 'weeks' | 'random15' = 'weeks',
+      customVariant: 'weeks' | 'random15' | 'scientists' = 'weeks',
     ) => {
       if (!dataset) {
         return
@@ -183,10 +183,10 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
         customQuizOrder,
       )
       const finalPool =
-        source === 'custom' && customVariant === 'random15'
+        source === 'custom' && customVariant !== 'weeks'
           ? getPool(
               dataset,
-              { ...selection, shuffle: 'random15', scope: 'full' },
+              { ...selection, shuffle: customVariant, scope: 'full' },
               bookmarks,
             )
           : pool

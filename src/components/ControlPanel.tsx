@@ -1,6 +1,7 @@
 import { Flame, Play } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { useQuiz } from '../context/QuizContext'
+import { flattenQuestions, isScientistQuestion } from '../utils/quiz'
 
 export function ControlPanel() {
   const {
@@ -15,7 +16,7 @@ export function ControlPanel() {
     setCustomQuizOrder,
   } = useQuiz()
 
-  const [customSource, setCustomSource] = useState<'weeks' | 'random15'>('weeks')
+  const [customSource, setCustomSource] = useState<'weeks' | 'random15' | 'scientists'>('weeks')
 
   const selectedCustomCount = useMemo(
     () =>
@@ -24,6 +25,11 @@ export function ControlPanel() {
         0,
       ),
     [customWeekSelection],
+  )
+
+  const scientistCount = useMemo(
+    () => (dataset ? flattenQuestions(dataset).filter(isScientistQuestion).length : 0),
+    [dataset],
   )
 
   const setWeeksForYear = (year: string, nextWeeks: number[]) => {
@@ -60,7 +66,7 @@ export function ControlPanel() {
         <h2>Custom Week Quiz</h2>
       </div>
       <p className="custom-panel-note">
-        Pick any years and week combinations, or switch to random 15 from the full bank.
+        Pick any years and week combinations, switch to random 15 from the full bank, or practise only the questions that name a scientist.
       </p>
 
       <div className="custom-year-list">
@@ -126,6 +132,13 @@ export function ControlPanel() {
           type="button"
         >
           Random 15
+        </button>
+        <button
+          className={`select-btn ${customSource === 'scientists' ? 'active' : ''}`}
+          onClick={() => setCustomSource('scientists')}
+          type="button"
+        >
+          Scientist-named questions ({scientistCount})
         </button>
       </div>
 

@@ -180,7 +180,7 @@ export function QuizCard() {
         </button>
         {!isLast ? (
           <button className="action-btn" onClick={nextQuestion} disabled={!canGoNextRapid}>
-            {session.mode === 'rapid' ? 'Next Shot' : 'Next'}
+            {session.mode === 'rapid' ? 'Next' : 'Next'}
           </button>
         ) : (
           <button className="action-btn submit" onClick={submitQuiz}>
